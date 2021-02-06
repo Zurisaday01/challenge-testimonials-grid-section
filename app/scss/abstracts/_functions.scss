@@ -1,0 +1,22 @@
+// ------------------------------------------------
+// Obtener font-size ------------------------------
+// ------------------------------------------------
+@function get-font-size($elem) {
+    @return map-get($font__size, $elem);
+}
+
+
+// -------------------------------------------------
+// Obtener colors ----------------------------------
+//--------------------------------------------------
+@function color($elem, $variant) {
+    @return map-get( map-get($color, $elem), $variant);
+}
+
+
+// -------------------------------------------------
+// Obtener colors with opacity ---------------------
+//--------------------------------------------------
+@function opacity($elem, $value__opacity) {
+    @return rgba(map-get( $typography, $elem ), $value__opacity);
+}

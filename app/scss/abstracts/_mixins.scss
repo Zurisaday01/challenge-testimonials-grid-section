@@ -1,0 +1,4 @@
+// Font size
+@mixin font-size($elem){
+    font-size: get-font-size($elem);
+}
