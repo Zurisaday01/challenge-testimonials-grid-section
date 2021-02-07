@@ -1,10 +1,14 @@
 .card{
     border-radius: 1rem;
     padding: 2rem;
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+    row-gap: 1.8rem;
     
     &--first{
         background-color: color(primary, a);
         grid-area: first;
+        color: color(typography, a);
     }
 
     &--second{
@@ -15,11 +19,13 @@
     &--third{
         background-color: color(typography, a);
         grid-area: third;
+        color: color(typography, b);
     }
 
     &--fourth{
         background-color: color(typography, a);
         grid-area: fourth;
+        color: color(typography, b);
     }
 
     &--fifth{

@@ -1,0 +1,42 @@
+.person{
+    display: flex;
+
+    // Ponerle margen derecho a la photo 
+    & > * {
+        &:not(:last-child){
+            margin-right: 1rem;
+        }
+    }
+    // 
+
+    &__name{
+        &--white{
+            color: color(typography, a);
+        }
+
+        &--dark-gray{
+            color: color(typography, b);
+        }
+    }
+
+    &__contain{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    &__description{
+        color: rgba(color(typography, a), .5);
+        @include font-size(gamma);
+
+        &--white{
+            color: rgba(color(typography, a), .5);
+        }
+
+        &--dark-gray{
+            color: rgba(color(typography, b), .7);
+        }
+    }
+}
