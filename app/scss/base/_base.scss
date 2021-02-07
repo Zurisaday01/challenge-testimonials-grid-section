@@ -8,7 +8,18 @@
 
 
 html{
+    height: 100vh;
     font-size: 62.5%; // 10px
     box-sizing: border-box;
 }
 
+body{
+    height: 100vh;
+    font-family: $font__family;
+    @include font-size(beta);
+    background-color: color(neutral, a);
+}
+
+.container{
+    padding: 12rem;
+}

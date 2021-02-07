@@ -1,0 +1,29 @@
+.card{
+    border-radius: 1rem;
+    padding: 2rem;
+    
+    &--first{
+        background-color: color(primary, a);
+        grid-area: first;
+    }
+
+    &--second{
+        background-color: color(typography, b);
+        grid-area: second;
+    }
+
+    &--third{
+        background-color: color(typography, a);
+        grid-area: third;
+    }
+
+    &--fourth{
+        background-color: color(typography, a);
+        grid-area: fourth;
+    }
+
+    &--fifth{
+        background-color: color(primary, b);
+        grid-area: fifth;
+    }
+}
