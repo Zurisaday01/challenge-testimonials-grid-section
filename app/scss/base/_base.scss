@@ -24,3 +24,8 @@ body{
 .container{
     padding: 12rem;
 }
+
+::selection{
+    background-color: color(primary, a);
+    color: color(typography, a);
+}
