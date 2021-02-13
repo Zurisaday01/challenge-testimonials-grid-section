@@ -10,7 +10,6 @@ function scssTask(){
   return src('./app/scss/style.scss')
     .pipe(sass())
     .pipe(postcss([cssnano()]))
-    .pipe(dest('css'));
 }
 
 
