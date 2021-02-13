@@ -1,0 +1,49 @@
+@keyframes top{
+    0%{
+        transform: translateY(-10rem);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes right{
+    0%{
+        transform: translateX(10rem);
+        opacity: 0;
+        display: none;
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+        display: block;
+    }
+}
+
+@keyframes left{
+    0%{
+        transform: translateX(-10rem);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bottom{
+    0%{
+        transform: translateY(10rem);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

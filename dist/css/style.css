@@ -213,6 +213,40 @@ template {
 /* ----------------------------------------
 # Animations
 -----------------------------------------*/
+@keyframes top {
+  0% {
+    transform: translateY(-10rem);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes right {
+  0% {
+    transform: translateX(10rem);
+    opacity: 0;
+    display: none; }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    display: block; } }
+
+@keyframes left {
+  0% {
+    transform: translateX(-10rem);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes bottom {
+  0% {
+    transform: translateY(10rem);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
 /* ----------------------------------------
 # Base
 -----------------------------------------*/
@@ -281,7 +315,8 @@ body {
     background-color: #7541c8;
     grid-area: first;
     color: #ffff;
-    position: relative; }
+    position: relative;
+    animation: top 1s ease-in; }
     .card--first::before {
       content: url(../../../images/bg-pattern-quotation.svg);
       position: absolute;
@@ -290,18 +325,25 @@ body {
       z-index: 1; }
   .card--second {
     background-color: #48556a;
-    grid-area: second; }
+    grid-area: second;
+    animation: top 1s ease-in; }
   .card--third {
     background-color: #ffff;
     grid-area: third;
-    color: #48556a; }
+    color: #48556a;
+    animation: right 1s ease-in; }
   .card--fourth {
     background-color: #ffff;
     grid-area: fourth;
-    color: #48556a; }
+    color: #48556a;
+    animation: left 1s ease-in; }
+    @media only screen and (max-width: 51.875em) {
+      .card--fourth {
+        animation: right 1s ease-in; } }
   .card--fifth {
     background-color: #19212e;
-    grid-area: fifth; }
+    grid-area: fifth;
+    animation: bottom 1s ease-in; }
   .card__heading {
     z-index: 5; }
 

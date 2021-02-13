@@ -11,6 +11,7 @@
         grid-area: first;
         color: color(typography, a);
         position: relative;
+        animation: top 1s ease-in ;
 
         &::before{
             content: url(../../../images/bg-pattern-quotation.svg);
@@ -24,23 +25,32 @@
     &--second{
         background-color: color(typography, b);
         grid-area: second;
+        animation: top 1s ease-in;
     }
 
     &--third{
         background-color: color(typography, a);
         grid-area: third;
         color: color(typography, b);
+        animation: right 1s ease-in;
     }
 
     &--fourth{
         background-color: color(typography, a);
         grid-area: fourth;
         color: color(typography, b);
+        animation: left 1s ease-in;
+
+        
+        @include respond(medium){
+            animation: right 1s ease-in;
+        }
     }
 
     &--fifth{
         background-color: color(primary, b);
         grid-area: fifth;
+        animation: bottom 1s ease-in;
     }
 
     &__heading{
