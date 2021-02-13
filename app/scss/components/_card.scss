@@ -1,9 +1,10 @@
 .card{
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 2.5rem;
     display: grid;
     grid-template-rows: repeat(3, min-content);
     row-gap: 1.8rem;
+    box-shadow: 6px 3px 1.5rem 0px rgba(color(primary, b), 0.2);
     
     &--first{
         background-color: color(primary, a);
