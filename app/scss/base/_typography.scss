@@ -1,0 +1,25 @@
+.heading{
+    &--secondary{
+        @include font-size(alfa);
+    }
+
+    &--white{
+        color: color(typography, a);
+    }
+
+    &--dark-gray{
+        color: color(typography, b);
+    }
+
+}
+
+.paragraph{
+
+    &--white{
+        color: rgba(color(typography, a), .7);
+    }
+    
+    &--dark-gray{
+        color: rgba(color(typography, b), .7);
+    }
+}

@@ -1,0 +1,39 @@
+.main{
+    height: 100%;
+    width: 100%;
+
+    //grid
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 25rem);
+    gap: 2rem;
+    grid-template-areas: "first first second third"
+                         "fourth fifth fifth third";
+    justify-content: center;
+
+
+    @include respond(x-large){
+        grid-template-areas: "first first second fourth"
+                            "fifth fifth third third";
+    }
+
+    @include respond(large){
+        grid-template-areas: "first first second second"
+                            "fourth fifth fifth fifth"
+                            "third third third third";
+    }
+
+    @include respond(medium){
+        grid-template-areas:  "first first first first"
+                                "second fourth fourth fourth"
+                                "fifth fifth fifth fifth"
+                                "third third third third";
+    }
+
+    @include respond(small){
+        grid-template-areas: "first first first first"
+                            "second second second second"
+                            "fourth fourth fourth fourth"
+                            "fifth fifth fifth fifth"
+                            "third third third third";
+    }
+}
