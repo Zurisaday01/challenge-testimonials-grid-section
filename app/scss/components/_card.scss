@@ -10,6 +10,15 @@
         background-color: color(primary, a);
         grid-area: first;
         color: color(typography, a);
+        position: relative;
+
+        &::before{
+            content: url(../../../images/bg-pattern-quotation.svg);
+            position: absolute;
+            right: 2.5rem;
+            top: 0;
+            z-index: 1;
+        }
     }
 
     &--second{
@@ -32,5 +41,9 @@
     &--fifth{
         background-color: color(primary, b);
         grid-area: fifth;
+    }
+
+    &__heading{
+        z-index: 5;
     }
 }

@@ -10,6 +10,7 @@
                          "fourth fifth fifth third";
     justify-content: center;
 
+
     @include respond(x-large){
         grid-template-areas: "first first second fourth"
                             "fifth fifth third third";
